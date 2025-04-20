@@ -1,0 +1,1 @@
+# Webpack Template for Odin projects
