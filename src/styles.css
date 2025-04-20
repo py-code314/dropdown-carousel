@@ -162,3 +162,7 @@ body {
   background-color: transparent;
   /* font-weight: inherit; */
 }
+
+.hidden {
+  display: none;
+}
