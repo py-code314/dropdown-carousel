@@ -1,6 +1,7 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 // webpack.common.js
-const path = require('path');
-
+const path = require('path')
 
 module.exports = {
   // Entry file/s
@@ -22,4 +23,4 @@ module.exports = {
       },
     ],
   },
-};
+}

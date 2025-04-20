@@ -1,9 +1,10 @@
+/* eslint-disable no-undef */
 // webpack.dev.js
-const path = require('path');
-const common = require('./webpack.common');
-const { merge } = require('webpack-merge');
+const path = require('path')
+const common = require('./webpack.common')
+const { merge } = require('webpack-merge')
 // Handle HTML files
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = merge(common, {
   mode: 'development',
@@ -39,4 +40,4 @@ module.exports = merge(common, {
       },
     ],
   },
-});
+})
