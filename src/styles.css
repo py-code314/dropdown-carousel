@@ -166,8 +166,8 @@ body {
 
 .dropdown {
   /* Hide the element */
-  /* opacity: 0;
-  visibility: hidden; */
+  opacity: 0;
+  visibility: hidden;
 
   /* Placement */
   position: absolute;
@@ -192,11 +192,16 @@ body {
     transform 500ms ease-in-out;
 }
 
-.menu > .button--menu:focus + .dropdown {
+.dropdown.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
+/* .menu > .button--menu:focus + .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+} */
 
 .dropdown__item {
   text-align: center;
