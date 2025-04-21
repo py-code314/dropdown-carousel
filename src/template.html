@@ -10,33 +10,42 @@
       <header class="header">
         <h1 class="header__title">Epic</h1>
         <nav class="navbar">
-          <div class="navbar__menu">
-            <span class="navbar__text">Menu</span>
-            <button id="menu-button" class="button">
+          <div class="menu">
+            <span class="menu__text">Menu</span>
+            <button id="menu-button" class="button button--menu">
               <img
-              
                 class="button__image"
                 src="./images/icon-menu.svg"
                 alt=""
                 width="20"
                 height="20" />
             </button>
-          </div>
-          <ul id="menu" class="menu hidden">
-            <button id="close-button" class="button">
+            <ul id="dropdown" class="dropdown">
+              <!-- <button id="close-button" class="button">
               <img
                 class="button__image"
                 src="./images/icon-close.svg"
                 alt=""
                 width="20"
                 height="20" />
-            </button>
-            <li class="menu__item">Home</li>
-            <li class="menu__item">About</li>
-            <li class="menu__item">Explore</li>
-            <li class="menu__item">Booking</li>
-            <li class="menu__item">Contact</li>
-          </ul>
+            </button> -->
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#" onclick="event.preventDefault()">Home</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#" onclick="event.preventDefault()">About</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#" onclick="event.preventDefault()">Explore</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#" onclick="event.preventDefault()">Booking</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#" onclick="event.preventDefault()">Contact</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
       <div class="hero"></div>

@@ -2,9 +2,7 @@
    CSS VARIABLES
    =================== */
 
-
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-
 
 :root {
   /* Spacing */
@@ -19,15 +17,13 @@
 
   --width-1: 68.75rem;
   --width-2: 75rem;
-  
-
-  
+  --width-dropdown: 15.625rem;
 
   /* FONTS */
 
   /* Font family */
-  --ff-inknut-antiqua: "Inknut Antiqua", serif;
-  --ff-mulish: "Mulish", sans-serif;
+  --ff-inknut-antiqua: 'Inknut Antiqua', serif;
+  --ff-mulish: 'Mulish', sans-serif;
 
   /* Font sizes */
   --fs-400: 1rem;
@@ -40,7 +36,8 @@
   /* Colors */
   --clr-white: hsl(0, 0%, 100%);
   --clr-black: hsl(0, 0%, 0%);
-  
+  --clr-blue: hsl(204, 100%, 29%);
+  --clr-dark-blue: hsl(204, 100%, 23%);
 
   /* Utilities */
   --shadow-1: 3px 0px 5px 0px hsla(0, 0%, 0%, 0.75);
@@ -122,7 +119,6 @@ body {
   padding: var(--space-400);
   font-family: var(--ff-mulish);
   min-height: 100svh;
-
 }
 
 .wrapper {
@@ -144,25 +140,76 @@ body {
 
 .header__title {
   font-family: var(--ff-inknut-antiqua);
-
 }
 
 .navbar {
   font-weight: var(--fw-medium);
 }
 
-.navbar__menu {
+.menu {
   display: flex;
   justify-content: center;
-  gap: var(--space-400)
+  gap: var(--space-400);
+  position: relative;
 }
 
 .button {
   border: transparent;
   background-color: transparent;
+  cursor: pointer;
   /* font-weight: inherit; */
 }
 
-.hidden {
+/* .hidden {
   display: none;
+} */
+
+.dropdown {
+  /* Hide the element */
+  /* opacity: 0;
+  visibility: hidden; */
+
+  /* Placement */
+  position: absolute;
+  right: 0;
+  top: calc(100% + var(--space-400));
+
+  width: var(--width-dropdown);
+  padding: var(--space-200);
+  box-shadow: var(--shadow-2);
+  border-radius: var(--radius-1);
+  background-color: var(--clr-blue);
+  
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+
+  /* Animation */
+  transform: translateY(-10px);
+  transition:
+    opacity 500ms ease-in-out,
+    transform 500ms ease-in-out;
+}
+
+.menu > .button--menu:focus + .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown__item {
+  text-align: center;
+}
+
+.dropdown__link {
+  text-decoration: none;
+  color: var(--clr-white);
+  display: block;
+  padding-block: var(--space-200);
+}
+
+.dropdown__link:hover {
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-dark-blue);
 }
