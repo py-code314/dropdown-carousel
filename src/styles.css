@@ -32,6 +32,7 @@
   --fs-400: 1rem;
   --fs-500: 1.125rem;
   --fs-600: 1.25rem;
+  --fs-800: 1.75rem;
   --fs-1000: 2.25rem;
 
   /* Font weights */
@@ -124,30 +125,33 @@ ul {
    =================== */
 
 body {
-  /* padding: var(--space-400); */
   font-family: var(--ff-mulish);
   min-height: 100svh;
 }
 
 .background {
   padding: var(--space-900);
-  /* width: var(--width-1);
-  max-width: var(--width-2); */
-  display: flex; 
+   /* width: 80%;
+   margin: auto; */
+  /* max-width: var(--width-2); */
+  /* display: flex; 
   flex-direction: column;
-  gap: var(--space-300);
+  gap: var(--space-300); */
   /* justify-content: center; */
-  align-items: center;
+  /* align-items: center; */
   background: url(./images/image-mountain.jpeg) var(--clr-light-blue) center 75% / cover no-repeat ;
   height: var(--height-bg-image);
 }
 
 .header {
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  width: var(--width-1);
+  align-items: center;
+  /* width: var(--width-1); */
   max-width: var(--width-2);
-  /* padding-block-start: var(--space-300); */
+  padding-block-end: var(--space-700);
 }
 
 .header__title {
@@ -175,12 +179,8 @@ body {
   border: transparent;
   background-color: transparent;
   cursor: pointer;
-  /* font-weight: inherit; */
 }
 
-/* .hidden {
-  display: none;
-} */
 
 .dropdown {
   /* Hide the element */
@@ -215,11 +215,7 @@ body {
   visibility: visible;
   transform: translateY(0);
 }
-/* .menu > .button--menu:focus + .dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-} */
+
 
 .dropdown__item {
   text-align: center;
@@ -239,10 +235,9 @@ body {
 }
 
 .hero {
-  /* min-height: 300px; */
-  min-width: var(--width-hero);
-  /* max-width: var(--width-2); */
-  padding-block-start: var(--space-700);
+  width: 70%;
+  margin: auto;
+  padding-block-start: var(--space-1100);
 }
 
 .hero__decoration {
@@ -268,9 +263,38 @@ body {
   align-items: center;
   gap: var(--space-200);
   margin-block-start: var(--space-1100);
-  padding: var(--space-400);
+  padding: var(--space-300);
   border: 1px solid var(--clr-black);
   border-radius: var(--radius-3);
-  /* font-weight: var(--fw-bold); */
-  /* font-size: var(--fs-600); */
 }
+
+.explore {
+  padding: var(--space-900);
+  
+  background: url(./images/image-bg-pink-orange.jpeg) center / cover no-repeat;
+}
+
+.explore__wrapper,
+.explore__gallery {
+  width: 80%;
+  margin: auto;
+  
+}
+
+.explore__wrapper {
+  display: flex;
+}
+
+.explore__heading,
+.explore__text {
+  flex: 1;
+}
+
+.explore__heading {
+  font-size: var(--fs-800);
+}
+
+.explore__text {
+  text-align:justify;
+}
+
