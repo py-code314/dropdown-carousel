@@ -2,8 +2,8 @@
 
 ## Credits
 
-1. Menu Icon https://www.reshot.com/free-svg-icons/item/menu-EY6DUGZRCA/
-2. Delete Icon https://www.reshot.com/free-svg-icons/item/delete-GJLWABM6K9/
+### Icons
+All icons are from [Reshot](https://www.reshot.com/) and [Icomoon](https://icomoon.io/app/#/select)
 
 ### Images
 1. Volcano (image-mountain.jpeg) - "

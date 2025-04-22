@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dropdown Carousel</title>
+    <title>Dropdown - Carousel</title>
   </head>
   <body>
     <div class="background">
@@ -12,7 +12,7 @@
         <nav class="navbar">
           <div class="menu">
             <span class="menu__text">Menu</span>
-            <button id="menu-button" class="button button--menu">
+            <button id="menu-button" class="button button--menu button__dropdown">
               <img
                 class="button__image"
                 src="./images/icon-menu.svg"
@@ -20,15 +20,7 @@
                 width="25"
                 height="25" />
             </button>
-            <ul id="dropdown" class="dropdown">
-              <!-- <button id="close-button" class="button">
-              <img
-                class="button__image"
-                src="./images/icon-close.svg"
-                alt=""
-                width="20"
-                height="20" />
-            </button> -->
+            <ul  class="dropdown">
               <li class="dropdown__item">
                 <a
                   class="dropdown__link"
@@ -94,9 +86,195 @@
     </div>
 
     <section class="explore">
-      <div class="explore__wrapper">
-        <h2 class="explore__heading">Come And Explore Costa Rica</h2>
-        <p class="explore__text">
+      <h2 class="explore__heading">Find your adventure</h2>
+
+      <ul class="navigation">
+        <li class="navigation__item">
+          Experience
+          <button class="button button--nav button__dropdown" type="button ">
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt=""
+              width="25"
+              height="25"
+              class="button__image" />
+          </button>
+          <ul class="dropdown">
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Adventure</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Beaches</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Parks</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Nature & Wildlife</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="navigation__item">
+          Explore
+          <button class="button button--nav button__dropdown" type="button ">
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt=""
+              width="25"
+              height="25"
+              class="button__image" />
+          </button>
+          <ul class="dropdown">
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Culture & Community</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Events & Festivals</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Ecotourism</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="navigation__item">
+          Where To Go
+          <button class="button button--nav button__dropdown" type="button ">
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt=""
+              width="25"
+              height="25"
+              class="button__image" />
+          </button>
+          <ul class="dropdown">
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Central Valley</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Guanacaste</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Puntarenas</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Central Valley</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="navigation__item">
+          Plan Your Trip
+          <button class="button button--nav button__dropdown" type="button ">
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt=""
+              width="25"
+              height="25"
+              class="button__image" />
+          </button>
+          <ul class="dropdown">
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Accommodations</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Airlines</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Local Cuisine & Dining</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Rental Cars</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a
+                class="dropdown__link"
+                href="#"
+                onclick="event.preventDefault()"
+                >Tour Guides</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="gallery">
+      <div class="gallery__wrapper">
+        <h2 class="gallery__heading">Come And Explore Costa Rica</h2>
+        <p class="gallery__text">
           Exploring Costa Rica means discovering lush rainforests, stunning
           beaches, and vibrant wildlife. From hiking volcanoes to spotting
           monkeys and sloths in national parks, the country offers endless
@@ -209,46 +387,50 @@
 
     <footer class="footer">
       <div class="footer__wrapper">
-        <div class="footer__text">
-          <p class="footer__privacy">Privacy Policy</p>
-          <p class="footer__terms">Terms of Use</p>
+        <div class="footer__links">
+          <a href="#" onclick="event.preventDefault()" class="footer__link"
+            >Privacy Policy</a
+          >
+          <a href="#" onclick="event.preventDefault()" class="footer__link"
+            >Terms of Use</a
+          >
         </div>
-        <p class="footer__copyright">© Copyright 2025 - Epic Inc.</p>
-        <ul class="icon">
-          <li class="icon__item">
-            <a href="#" onclick="event.preventDefault()" class="icon__link"
+        <p class="footer__text">© Copyright 2025 - Epic Inc.</p>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" onclick="event.preventDefault()" class="social__link"
               ><img
-                class="icon__social"
+                class="social__icon"
                 src="./images/icon-twitter.svg"
                 alt=""
                 width="20"
                 height="20"
             /></a>
           </li>
-          <li class="icon__item">
-            <a href="#" onclick="event.preventDefault()" class="icon__link"
+          <li class="social__item">
+            <a href="#" onclick="event.preventDefault()" class="social__link"
               ><img
-                class="icon__social"
+                class="social__icon"
                 src="./images/icon-instagram.svg"
                 alt=""
                 width="20"
                 height="20"
             /></a>
           </li>
-          <li class="icon__item">
-            <a href="#" onclick="event.preventDefault()" class="icon__link"
+          <li class="social__item">
+            <a href="#" onclick="event.preventDefault()" class="social__link"
               ><img
-                class="icon__social"
+                class="social__icon"
                 src="./images/icon-linkedin.svg"
                 alt=""
                 width="20"
                 height="20"
             /></a>
           </li>
-          <li class="icon__item">
-            <a href="#" onclick="event.preventDefault()" class="icon__link"
+          <li class="social__item">
+            <a href="#" onclick="event.preventDefault()" class="social__link"
               ><img
-                class="icon__social"
+                class="social__icon"
                 src="./images/icon-facebook.svg"
                 alt=""
                 width="20"

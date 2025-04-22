@@ -1,15 +1,20 @@
 // Import HTML elements
-const menuButton = document.querySelector('#menu-button')
-// console.log(menuButton)
-// const closeButton = document.querySelector('#close-button')
-const dropdown = document.querySelector('#dropdown')
+const dropdowns = document.querySelectorAll('.dropdown')
+const dropdownButtons = document.querySelectorAll('.button__dropdown')
 
-// Event listeners for menu buttons
-menuButton.addEventListener('click', () => {
-  console.log('menu btn clicked')
-  dropdown.classList.toggle('active')
+
+
+function openMenu() {
+  const currentDropdown = this.nextElementSibling
+  const isOpen = currentDropdown.classList.contains('open')
+
+  dropdowns.forEach((dropdown) => dropdown.classList.remove('open'))
+  if (!isOpen) {
+    currentDropdown.classList.add('open')
+  }
+}
+
+dropdownButtons.forEach((button) => {
+  button.addEventListener('click', openMenu)
 })
 
-// closeButton.addEventListener('click', () => {
-//   menu.classList.add('hidden')
-// })
