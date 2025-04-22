@@ -50,6 +50,7 @@
   --clr-light-blue: hsl(211, 72%, 59%);
   --clr-black-1: hsla(0, 0%, 16%, 0);
   --clr-black-2: hsla(0, 0%, 16%, 0.7);
+  --clr-black-3: hsl(0, 0%, 9%);
   ---clr-light-grey: hsl(0, 1%, 60%);
   --clr-grey: hsl(0, 1%, 29%);
 
@@ -341,6 +342,7 @@ body {
 
 .dot {
   display: flex;
+  justify-content: center;
   gap: var(--space-80);
   width: 40%;
   margin: auto;
@@ -352,12 +354,49 @@ body {
   height: var(--space-350);
   background-color: var(---clr-light-grey);
   border-radius: var(--radius-circle);
-  display: inline-block;
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
+  
 }
 
 .dot__container:hover,
 .dot__container.active {
   background-color: var(--clr-grey);
+}
+
+.footer {
+  background-color: var(--clr-black-3);
+  color: var(--clr-white)
+}
+
+.footer__wrapper {
+  width: 40%;
+  margin: auto;
+  text-transform: uppercase;
+  padding: var(--space-700);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-400);
+  align-items: center;
+}
+
+.footer__text {
+  display: flex;
+  gap: var(--space-80)
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-400);
+}
+
+.icon__item {
+  background-color: var(--clr-white);
+  width: var(--space-1100);
+  height: var(--space-1100);
+  border-radius: var(--radius-circle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
