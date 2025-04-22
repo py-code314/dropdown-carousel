@@ -2,4 +2,5 @@
 import './styles.css'
 
 // Import JS modules
-import './scripts/dropdown-menu'
+import './scripts/dropdown'
+import './scripts/slideshow'
