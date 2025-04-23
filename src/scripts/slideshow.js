@@ -6,6 +6,22 @@ const dots = document.querySelectorAll('.dot__container')
 
 let slideIndex = 0
 
+
+
+// function showSlide(index) {
+//   slides.forEach((slide) => (slide.style.display = 'none'))
+//   dots.forEach((dot) => dot.classList.remove('active'))
+//   if (index > slides.length - 1) {
+//     console.log('index 0')
+//     slideIndex = 0
+//   }
+//   if (index < 0) {
+//     slideIndex = slides.length - 1
+//   }
+
+//   slides[slideIndex].style.display = 'block'
+//   dots[slideIndex].classList.add('active')
+// }
 function showSlide(index) {
   slides.forEach((slide) => (slide.style.display = 'none'))
   dots.forEach((dot) => dot.classList.remove('active'))
@@ -19,6 +35,8 @@ function showSlide(index) {
 
   slides[slideIndex].style.display = 'block'
   dots[slideIndex].classList.add('active')
+
+  
 }
 
 function showNextSlide() {
@@ -40,3 +58,8 @@ dots.forEach((dot, index) => {
 })
 
 showSlide(slideIndex)
+
+setInterval(showNextSlide, 3000);
+
+
+
