@@ -7,21 +7,7 @@ const dots = document.querySelectorAll('.dot__container')
 let slideIndex = 0
 
 
-
-// function showSlide(index) {
-//   slides.forEach((slide) => (slide.style.display = 'none'))
-//   dots.forEach((dot) => dot.classList.remove('active'))
-//   if (index > slides.length - 1) {
-//     console.log('index 0')
-//     slideIndex = 0
-//   }
-//   if (index < 0) {
-//     slideIndex = slides.length - 1
-//   }
-
-//   slides[slideIndex].style.display = 'block'
-//   dots[slideIndex].classList.add('active')
-// }
+/* Shows a slide given an index */
 function showSlide(index) {
   slides.forEach((slide) => (slide.style.display = 'none'))
   dots.forEach((dot) => dot.classList.remove('active'))
@@ -39,17 +25,21 @@ function showSlide(index) {
   
 }
 
+/* Shows the next slide in the slideshow */
 function showNextSlide() {
   showSlide((slideIndex += 1))
 }
 
+/* Shows the previous slide in the slideshow */
 function showPreviousSlide() {
   showSlide((slideIndex -= 1))
 }
 
+/* Event listeners for previous and next buttons */
 nextButton.addEventListener('click', showNextSlide)
 previousButton.addEventListener('click', showPreviousSlide)
 
+/* Event listeners for dot clicks */
 dots.forEach((dot, index) => {
   dot.addEventListener('click', () => {
     slideIndex = index
@@ -57,9 +47,11 @@ dots.forEach((dot, index) => {
   })
 })
 
+// Show first slide
 showSlide(slideIndex)
 
-setInterval(showNextSlide, 3000);
+// Show next slide every 5 seconds
+setInterval(showNextSlide, 5000);
 
 
 
