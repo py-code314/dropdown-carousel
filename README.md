@@ -25,8 +25,18 @@ The photo gallery is in the form of a slideshow with buttons to go to the previo
 
 ### Screenshots
 
+![Dropdown menu 1](./src/images/screenshots/screenshot-menu.png)
+
+![Dropdown menu 2](./src/images/screenshots/screenshot-navigation.png)
+
+![Carousel](./src/images/screenshots/screenshot-carousel.png)
+
 
 ### Links
+
+- Solution URL: [https://github.com/py-code314/dropdown-carousel](https://github.com/py-code314/dropdown-carousel)
+- Github Pages URL: [https://py-code314.github.io/dropdown-carousel/](https://py-code314.github.io/dropdown-carousel/)
+
 
 ## Credits
 
